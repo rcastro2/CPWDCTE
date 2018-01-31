@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bayside High School Computer Programming CTE</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/cte.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .col-md-5 h3,.breaks{margin-top:0px;color:white;background-image:url('../images/bluebk.jpg');border-radius:5px;padding:5px}
+        .col-md-5 img{border-radius:5px;box-shadow:3px 3px 3px #000066;margin-bottom:10px;}
+        .breaks{text-align: center;}
+        .img-responsive{max-height: 400px;}
+        .galleryThumbs{ height:50px;}
+    </style>
+
+</head>
+
+<body id="mycss">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row" id="header">
+            <div class="col-lg-12">
+                <h1 class="page-header">Events</h1>
+                <ol class="breadcrumb">
+                    <li><a href="#2016-2017">2016-2017</a></li>
+                    <li><a href="#2015-2016">2015-2016</a></li>
+                    <li><a href="#2014-2015">2014-2015</a></li>
+                    <li><a href="#2013-2014">2013-2014</a></li>
+                    <li><a href="#2012-2013">2012-2013</a></li>
+                </ol>
+                
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Blog Post Row -->
+
+
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Bayside High School Computer Programming CTE 2017</p>
+                </div>
+            </div>
+        </footer>
+		<div id="result"></div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/mustache.js"></script>
+    	<script id="break-template" type="text/template">
+        <a ></a>
+		<div class="row">
+            <div class="col-md-12" id="{{break}}" >
+                <h2 class="breaks">{{break}}</h2>
+            </div>
+        </div>
+		<hr>
+	</script>
+	<script id="event-template" type="text/template">
+		<div class="row">
+            <div class="col-md-5">
+                <h3>
+                    {{data.title}}
+                </h3>
+
+                <a onclick="display({{id}})">
+                    <img class="img-responsive" src="{{data.image}}" alt="">
+                </a>
+                <p>{{data.date}}
+                </p>
+                {{#data.gallery}}
+                    <img src="{{thumbnail}}" class="galleryThumbs">
+                {{/data.gallery}}
+            </div>
+            <div class="col-md-7">
+
+                <p>{{{data.description}}}</p>
+                
+            </div>
+        </div>
+		<hr>
+	</script>
+	<script type="text/javascript">
+		var events;
+        
+		$(document).ready(function(){
+				$("nav" ).load( "navbar.html" );
+				$.getJSON("events.js", function(result){
+				events = result;
+					var tpl = $("#event-template").html();
+                    var break_tpl = $("#break-template").html();
+					var build = new Array("");
+					$.each(result, function(i, data){
+                        if(i==0)
+                            build.push(Mustache.render(break_tpl,{break:"2016-2017"}));
+                        else if(i==8)
+                            build.push(Mustache.render(break_tpl,{break:"2015-2016"}));
+                        else if(i==20)
+                            build.push(Mustache.render(break_tpl,{break:"2014-2015"}));
+                        else if(i==33)
+                            build.push(Mustache.render(break_tpl,{break:"2013-2014"}));
+                        else if(i==45)
+                            build.push(Mustache.render(break_tpl,{break:"2012-2013"}));
+						build.push(Mustache.render(tpl,{data:data,id:i}));
+					});
+				
+					$("#header").after(build.join(''));
+				});
+		})
+		var display = function(id){alert(id);}
+	</script>
+
+</body>
+
+</html>

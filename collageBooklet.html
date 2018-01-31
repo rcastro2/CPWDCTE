@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bayside High School Computer Programming CTE</title>
+
+	<script src="js/images.js"></script>
+	<style>
+	  .thumbnail {
+		  position: relative;
+		  float:left;
+		  overflow: hidden;
+		  margin:0px;
+		  border-radius:0px;
+		  border:0px;
+		  background-color:white;
+		  width: 75px;
+		  height: 75px;
+
+		}
+		.thumbnail img {
+		  position: absolute;
+		  left: 50%;
+		  top: 50%;
+		  height: 100%;
+		  min-width: 50px;
+		  -webkit-transform: translate(-50%,-50%);
+			  -ms-transform: translate(-50%,-50%);
+				  transform: translate(-50%,-50%);
+		  opacity:0.8;
+
+		}
+
+		.collage{
+			position:absolute;
+			top:0;
+			left:0;
+		}
+		#mycss .bannertext{ 
+			color:#006;
+			text-shadow:1px 1px #bbb;
+			font-weight:700
+		}
+	</style>
+</head>
+
+<body id="mycss">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"></nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Marketing Icons Section -->
+		<div style="height:600px" id="banner" >
+
+		 </div>
+
+    </div>
+    <!-- /.container -->
+	    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+	
+	<!-- Slick Gallery JS -->
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			   collage("banner",50,50);
+		});
+		function collage(source,thumbwidth, thumbheight){
+			target = document.getElementById(source)
+			target.style.overflow = 'hidden';
+			target.style.position = 'relative';
+			twidth = parseInt(window.getComputedStyle(target, null).getPropertyValue("width"));
+			theight = parseInt(window.getComputedStyle(target, null).getPropertyValue("height"));
+			
+			bk = document.createElement("div");
+			bk.className = "collage";
+			bk.style.width = twidth + thumbwidth + "px";
+			bk.style.height = theight + thumbheight + "px";
+			for(i=0;i<(twidth / thumbheight + 1)*(theight/thumbheight + 1);i++){
+				thumb = document.createElement("div");
+				thumb.className = "thumbnail";
+				img = document.createElement("img");
+				index = Math.floor(Math.random()*thumbs.length);
+				img.src = thumbs[index];
+				thumb.append(img);
+				bk.appendChild(thumb);
+				
+			}
+			target.appendChild(bk);
+
+		}
+
+    </script>
+
+</body>
+
+</html>

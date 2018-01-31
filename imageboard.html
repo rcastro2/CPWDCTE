@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+	<script src="js/images.js"></script>
+	<style>
+	  .thumbnail {
+		  position: relative;
+		  width: 50px;
+		  height: 50px;
+		  overflow: hidden;
+		  margin:0px;
+		  background-color:#55f;
+		  float:left;
+		}
+		.thumbnail img {
+		  position: absolute;
+		  left: 50%;
+		  top: 50%;
+		  height: 100%;
+		  min-width: 50px;
+		  -webkit-transform: translate(-50%,-50%);
+			  -ms-transform: translate(-50%,-50%);
+				  transform: translate(-50%,-50%);
+		  opacity:0.6;
+		}
+		.thumbnail img:hover{
+			opacity:1;
+		}
+		#target{
+		    width:525px;
+			height:200px;
+			margin:0 auto;
+			border-radius:20px;
+			border:1px solid #black;
+			background-color:black;
+			overflow:hidden
+		}
+		.collage{
+				  
+		}
+	</style>
+</head>
+<body>
+<div id="target"></div>
+	<script>
+		function collage(target,thumbwidth, thumbheight){
+			var target = document.getElementById(target)
+			target.style.overflow = 'hidden';
+			 twidth = parseInt(window.getComputedStyle(target, null).getPropertyValue("width"));
+			 theight = parseInt(window.getComputedStyle(target, null).getPropertyValue("height"));
+			
+			var bk = document.createElement("div");
+			bk.className = "collage";
+			bk.style.width = twidth + thumbwidth + "px";
+			bk.style.height = theight + thumbheight + "px";
+			for(i=0;i<(twidth / thumbheight + 1)*(theight/thumbheight + 1);i++){
+				var thumb = document.createElement("div");
+				thumb.className = "thumbnail";
+				var img = document.createElement("img");
+				img.src = thumbs[i];
+				thumb.append(img);
+				bk.appendChild(thumb);
+				
+			}
+			document.getElementById("target").appendChild(bk);
+
+		}
+		collage("target",50,50);
+	</script>
+</body>
+</html>

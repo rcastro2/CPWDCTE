@@ -26,7 +26,34 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        *{
+            font-size:14pt;
+        }
+        .media-heading{
+            font-weight: bold;
+        }
+        .main-tabs>li.active>a{
+            background-image:url('../images/bluebk.jpg') !important;
+            color:white !important;
+        }
+        #myTab2>li>a{
+            background-color:white !important;
+        }
+        .tab-content{
+            background-color:rgb(0,59,117);
+            color:white;
+            padding:20px;
+        }
+       .tab-academics{
+            background-color:white !important;
+            color:black;
+        }
+        .tab-academics p{
+            padding-left: 50px;
+        }
 
+    </style>
 </head>
 
 <body id="mycss">
@@ -51,17 +78,14 @@
             <div class="col-md-8">
                 <p>Career and Technical Education provides revalent and engaging courses of study that motivate students to pursue futures
                     in high demand career fields.  By working with post-secondary instituitions and industry professionals, 
-                </p>
+                </p><br>
                 <ul class="list">
-                    <li>courses are developed to teach students technical and non-technical skills used in the workplace.</li>
-                    <li>students have the opportunity to obtain college credits through the numerous Advanced Placement and college accredited courses offered.</li>
-                    <li>experiences are coordinate to provide context and connect skills learned in the classroom to real world applications.</li>
+                    <li>courses are developed to teach students technical and non-technical skills.</li>
+                    <li>students have the opportunity to obtain college credits through courses offered.</li>
+                    <li>experiences are coordinate to provide context to skills learned in the classroom.</li>
                     <li>students are prepared for entry level positions through internships, interactive product development and career preparation activities
                         such as resume writing, interviewing, communication, collaboration and presenation.</li>
                 </ul>
-                <p>With current advancement in technologies, computer science related occupations are on the rise, <a data-toggle="modal" data-target="#modalBLS">Bureau of Labor Statistics</a>. Competitive salaries ,<a data-toggle="modal" data-target="#modalSalaries">National Association of Colleges and Employers</a>, in conjunction with the increase demand for computer science professionals make this an opportune time to entry the industry. </p>
-                <p>It is our <a href="CTECSMission.pdf" target="_blank">mission</a> to narrow the skills gap in computer science related careers by focusing on career aligned academics, work based experiences and career preparation.
-
                 <!-- Modal -->
                 <div id="modalBLS" class="modal fade" role="dialog">
                     <div class="modal-dialog">
@@ -196,205 +220,294 @@
                 <img class="img-responsive" src="images/pillars.gif" alt="">
             </div>
         </div>
-        <!-- /.row -->      
-        <!-- Academics Tabs -->
-        <a id="academics" class="anchors">&nbsp;</a>
         <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Academics</h2>
-                <p>
-                    Throughout all four years emphasis is placed on learning programming concepts, developing computational thinking skills and acquiring non-technical
-                    skills used in the workforce.
-                    <ul class="list">
-                        <li>Students are exposed to problems that incorporate various disciplines such as mathematics, sciences, business, language, music and art.</li>
-                        <li>Students develop stand-alone applications, process data from external sources, design web sites through code, create basic games, 
-                            generate code to control physical devices, and produce mobile apps.</li>
-                        <li>Students learn to collaborate, communicate and innovate as they complete large scale project based activities.</li>
-                        <li>Students explore programming concepts using a myriad of different technologies such as Python, HTML, CSS, Bootstrap, 
-                            JavaScript, various APIs and libraries, Java, Andriod SDK, and numerous data store technologies.</li>
-                    </ul>
-                Student recognize that programming is everywhere and algorithm is key!  Below are descriptions of the technical courses students take 
-                over the course of four years.
-                </p>
-                <hr>
-            </div>
-            <div class="col-lg-12">
-
-                <ul id="myTab" class="nav nav-tabs nav-justified">
-                    <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-battery-quarter"></i> Programming Technologies</a>
-                    </li>
-                    <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-battery-half"></i> Computer Programming</a>
-                    </li>
-                    <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-battery-three-quarters"></i> Computer Science</a>
-                    </li>
-                    <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-battery-full"></i> CS Career Development</a>
-                    </li>
-                </ul>
-
-                <div id="myTabContent" class="tab-content" >
-                    <div class="tab-pane fade active in" id="service-one">
-                        <h4>Programming Technologies (9th Grade)</h4>
-                        <p> For many students, Programming Technologies is their first exposure to Computer Science.  Course focuses on motivating students while showing him them that 
-                            computer science is just a natural extension of lanugage and logic thinking.  Students learn fundamental programming concepts such as iterations and functions
-                            using Python.
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="service-two">
-                        <h4>Introduction to Computer Programming (10th Grade)</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    </div>
-                    <div class="tab-pane fade" id="service-three">
-                        <h4>Advanced Placement Computer Science or Introduction to Computer Science (11th Grade)</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    </div>
-                    <div class="tab-pane fade" id="service-four">
-                        <h4>CS Career Development (9th Grade)</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Service List -->
-        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-        <a id="wbl" class="anchors">&nbsp;</a>
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Work Based Experiences</h2>
-                <p>
-                    At the core of CTE is the understanding that students must see, experience and apply what they are learning in the classrooms.  With the help of 
-                    industry partners, post secondary education partners and various organiztions, students are able to witness the concepts in use.  Experiences are
-                    varied and scaffolded in order to provide every student a meaningful exposure to computer science.
-                </p>
-                <hr>
-            </div>
-            <div class="col-md-4">
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
-                        </span> 
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Guest Speakers</h4>
-                        <p>Speakers share experiences and knowledge of careers fields and technologies used in the workforce.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                        </span> 
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Career Focused Field Trip</h4>
-                        <p>Through field trips, students see various aspect of the career field.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                        </span> 
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Job Shadowing</h4>
-                        <p>A more focused observation of the career field than field trips, students follow an industry professional during their day to day tasks.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
-                        </span> 
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Technical Workshops / Courses</h4>
-                        <p>Workshops and course allow students to learn topics outside of the scope of the classroom and realize how a career is a lifelong learning endeavor.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
-                        </span> 
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Competitions</h4>
-                        <p>Students </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
-                        </span> 
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Mentorship</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-space-shuttle fa-stack-1x fa-inverse"></i>
-                        </span> 
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Internships</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
+            <div class="col-md-12">
+                <br>
+                <p>With current advancement in technologies, computer science related occupations are on the rise, <a data-toggle="modal" data-target="#modalBLS">Bureau of Labor Statistics</a>. Competitive salaries ,<a data-toggle="modal" data-target="#modalSalaries">National Association of Colleges and Employers</a>, in conjunction with the increase demand for computer science professionals make this an opportune time to entry the industry. </p>
+                <p>It is our <a href="CTECSMission.pdf" target="_blank">mission</a> to narrow the skills gap in computer science related careers by focusing on career aligned academics, work based experiences and career preparation.
             </div>
         </div>
         <!-- /.row -->
-        <!-- Features Section -->
-        <a id="careerpreparation" class="anchors">&nbsp;</a>
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Career Preparation</h2>
+                <ul id="myTab" class="nav nav-tabs nav-justified main-tabs">
+                        <li class="active" ><a href="#lservice-academics" data-toggle="tab"><i class="fa fa-fw fa-university"></i> Academics</a>
+                        </li>
+                        <li class=""><a href="#lservice-wbl" data-toggle="tab"><i class="fa fa-fw fa-globe"></i> Work Based Learning</a>
+                        </li>
+                        <li class=""><a href="#lservice-career" data-toggle="tab"><i class="fa fa-fw fa-briefcase"></i> Career Preparation</a>
+                        </li>
+                    </ul>
+    
+                    <div id="myTabContent" class="tab-content" >
+                        <div class="tab-pane fade active in" id="lservice-academics">
+                                <div class="row">
+                                        <div class="col-lg-12">
+                                            <h2 class="page-header">Academics</h2>
+                                            <p>
+                                                Throughout all four years emphasis is placed on learning programming concepts, developing computational thinking skills and acquiring non-technical
+                                                skills used in the workforce.
+                                                <br><br>
+                                                <ul class="list">
+                                                    <li>Students are exposed to problems that incorporate various disciplines such as mathematics, sciences, business, language, music and art.</li>
+                                                    <li>Students develop stand-alone applications, process data from external sources, design web sites through code, create basic games, 
+                                                        generate code to control physical devices, and produce mobile apps.</li>
+                                                    <li>Students learn to collaborate, communicate and innovate as they complete large scale project based learning activities.</li>
+                                                    <li>Students explore programming concepts using a myriad of different technologies such as Python, HTML, CSS, Bootstrap, 
+                                                        JavaScript, various APIs and libraries, Java, Andriod SDK, and numerous data store technologies.</li>
+                                                </ul>
+                                                <br>
+                                            Student recognize that programming is everywhere and algorithm is key!  Our goal is to provide students a strong foundation with which to explore new technologies and make their ideas a reality.  Each course has components of Project Based Learning (PBL) in order to provide students tangible artifacts to demonstrate their passion, creativity and technical skills. Below are descriptions of the technical courses students take 
+                                            over the course of four years.
+                                            </p>
+                                            <br>
+                                        </div>
+                                        <div class="col-lg-12">
+                            
+                                            <ul id="myTab2" class="nav nav-tabs nav-justified">
+                                                <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-battery-quarter"></i> Programming Technologies</a>
+                                                </li>
+                                                <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-battery-half"></i> Introduction to<br> Computer Programming</a>
+                                                </li>
+                                                <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-battery-three-quarters"></i> Introduction to<br> Computer Science</a>
+                                                </li>
+                                                <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-battery-full"></i> CS Career<br> Development</a>
+                                                </li>
+                                            </ul>
+                            
+                                            <div id="myTab2Content" class="tab-content tab-academics" >
+                                                <div class="tab-pane fade active in" id="service-one">
+                                                        <h4>Programming Technologies (9th Grade) </h4>
+                                                        <i>Overview</i><br>
+                                                        <p>Freshmen prove to be a diverse audience as students may arrive with varying exposures to computer science.  We look to level the playing field by providing students three areas to explore computer science: art, video games, and physical devices.  We use Python to introduce concepts such as variables, mathematical operations, functions, decision making, loops, lists, objects, and libraries.  Students learn these concepts within the confines of the three areas of exploration.</p>
+                                                        
+                                                        <p>Alongside the programming concepts, students are also exposed to algorithmic thinking, delivering a presentation / demonstration, collaboration, and documentation.  Students start their professional portfolio by hosting their work on GitHub.</p>
+                                                        <br>
+                                                        <i>Technology</i><br>
+                                                        <p>Python programming language provides the foundation for freshmen to explore various applications of programming.  The use of the following 
+                                                        libraries assist in the students exploration of technologies: turtle (Art of Code), pygame (We Code You Play) and grovepi (Intrusion Alert System).
+                                                        </p>
+                                                        <br>
+                                                        <i>PBL Activity</i><br>
+                                                        <p><u>Art of Code</u><br>Over the course of two weeks, students are challenged to produce an art piece by instructing a “turtle” in Python.  Students showcase their creativity as they demonstrate their grasps of variables, loops, objects, and functions within the confines of instructing a turtle.</p>
+                                                        <br>
+                                                        <p><u>We Code You Play</u><br>Over the course of six weeks, students are challenged to create a video game by using Python, pygame, and our own in house library.  Students do more than just code.  In groups of two, students must develop and pitch their idea through a concept presentation, collaborate and implement their game and finally demonstrate their prototype.  Last year, select students demonstrated their games at Adelphi University.</p></p>
+                                                        <br>
+                                                        <p><u>Intrusion Alert System</u><br>Using Raspberry Pis and GrovePi kits students explore using Python to interact with sensors, motors, and the outside world.  Over the course of two weeks in groups of three, students add and demonstrate enhancements to the basic intrusion alert system introduced in class.</p></p>
+                                                        
+                                                </div>
+                                                <div class="tab-pane fade" id="service-two">
+                                                        <h4>Introduction to Computer Programming (10th Grade)</h4>
+                                                        <i>Overview</i><br>
+                                                        <p>Having gained an appreciation for what can be done with programming, students are challenged to develop a deeper understanding of the fundamental programming concepts introduced in Programming Technologies while learning several new concepts such as string operations and JSON.  Using JavaScript as our platform provides students the unique opportunity to engage in projects that use information from the Internet.  Students learn about APIs (Google Maps, Open Weather Map, TheMovieDB, NYC Open Data), libraries (JQuery, mustache.js, c3.js) and data storage and retrieval (Firebase).  Students are also introduced to web design concepts involving HTML, CSS, and Bootstrap.</p>
+                                                        
+                                                        <p>Alongside furthering their understanding of programming concepts, students continue to develop their algorithmic thinking and their ability to present, collaborate, implement, and demonstrate a prototype as group.  Students develop the ability to identify the programming concepts required from a scenario.  Students build their confidence to research and implement concepts beyond the scope of the classroom.</p>
+                                                        <br>
+                                                        <i>Technology</i><br>
+                                                        <p>Language: JavaScript
+                                                        Libraries / Platform: 
+                                                        API: Google Maps, Open Weather Map, TheMovieDB, NYC Open Data
+                                                        Data Store: Firebase
+                                                        Libraries: JQuery, mustache.js, c3.js</p>
+                                                        <br>
+                                                        <i>PBL Activity</i><br>
+                                                        <p><u>NYC Open Data</u><br>In groups of two over the course of two weeks, students are challenged to find a data set relevant to their interests or concerns and make the information engaging to a visitor.  Students showcase their creativity as they demonstrate their grasps of programming and web design concepts as well as demonstrate their ability to access and present information from the Internet.</p>
+                                                        <br>
+                                                        <p><u>The Tutors</u><br>In groups of three over the course of five weeks, students select an area of interest in which they wish to educate visitors.  As part of the project, students must provide a means to assess a visitors understanding of the concepts introduced via the site.  Project must incorporate data storage and retrieval in addition to all the concepts learned throughout the year.</p>
+                                                        
+                                                </div>
+                                                <div class="tab-pane fade" id="service-three">
+                                                        <h4>Introduction to Computer Science (11th Grade)</h4>
+                                                        <i>Overview</i><br>
+                                                        <p>By their junior year, students have amassed some experience and proficiency in fundamental programming concepts which allows the focus of this course to go beyond the coding and more on the algorithm and analysis of a problem.  Using Java, students continue to deepen their understanding of fundamental programming concepts while also exploring advanced concepts such as object oriented design, inheritance, sorting and searching algorithms, recursion, and relational databases.  </p>
+                                                        
+                                                        <p>Alongside furthering their understanding of programming concepts, students continue to develop their algorithmic thinking, their ability to present, collaborate, implement and demonstrate a prototype as group, research technical information on the Internet, and compare and contrast solutions.</p>
+                                                        <br>
+                                                        <i>Technology</i><br>
+                                                        <p>Language: Java
+                                                        Libraries / Platform: 
+                                                        IDE - IntelliJ
+                                                        Mobile Development - Android Studio
+                                                        Native Java Drawing Libraries
+                                                        SQL
+                                                        </p>
+                                                        <br>
+                                                        <i>PBL Activity</i><br>
+                                                        <p><u>Secret Decoder Ring</u><br>In groups of two over the course of two weeks, students are challenged to develop a creative way to encrypt and decrypt messages.  Students demonstrate their grasp of programming concepts and ingenuity as they showcase their encryption and decryption application and discuss their algorithm.</p>
+                                                        <br>
+                                                        <p><u>Junior Capstone Project</u><br>In groups of three over the course of five weeks, students are challenged to develop an idea for a product, pitch the idea, implement and demonstrate a prototype.  This project serves as precursory experience to the senior capstone project.  </p>
+                                                        
+                                                </div>
+                                                <div class="tab-pane fade" id="service-four">
+                                                        <h4>CS Career Development (12th Grade)</h4>
+                                                        <i>Overview</i><br>
+                                                        <p>The goal of the Computer Programming and Web Design Career and Technical Education program is to provide students a solid foundation in computer science through which they can explore their own endeavors.  Having gone through three years of scaffolded education in computer science, students are challenged to put their skills and creativity to the test in a four-month long project based learning activity: Senior Capstone Project.  Students are allowed to form their own teams, conceive their own ideas, implement using their own stacks, and finally demonstrate their prototype.  Teachers take on the role of a mentor to assist students in their projects.  In the past ideas have been implement using technologies such as iOS Development (Swift), Android Development (Java), Unity 3D (C#), IoT (Raspberry Pi, Python, Flask, SQLite), and Web Development(HTML, CSS, Bootstrap, Firebase, APIs, JavaScript, Python, Google App Engine, PHP, MySQL).</p> 
+                                                        <br>
+                                                        <i>Technology</i><br>
+                                                        <p>Language: Any
+                                                        Libraries / Platform: Any
+                                                        </p>
+                                                        <br>
+                                                        <i>PBL Activity</i><br>
+                                                        <p><u>Senior Capstone Project</u><br>In groups of three to five students over the course of four months, students are challenged to:
+                                                        <ul style="margin-left:50px">
+                                                        <li>Research an idea</li> 
+                                                        <li>Write a feasibility study</li>
+                                                        <li>Deliver an elevator pitch of their idea</li>
+                                                        <li>Select which ideas go into development</li>
+                                                        <li>Form student companies</li>
+                                                        <li>Deliver a concept presentation</li>
+                                                        <li>Write a product description</li>
+                                                        <li>Implement a prototype</li>
+                                                        <li>Deliver a progress presentation with prototype demonstration</li>
+                                                        <li>Present and demonstrate their prototype to a panel of judges (Qualifying Round)</li>
+                                                        <li>Select prototypes present and demonstrate their prototype to a panel of judges (Final Round)</li>
+                                                        <li>Write a reflection paper on senior capstone project experience</li>
+                                                        </ul>
+                                                        </p>
+                                                        
+                                                        
+                                                </div>
+                                            </div>
+                            
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="tab-pane fade" id="lservice-wbl">
+                                <div class="row">
+                                        <div class="col-lg-12">
+                                            <h2 class="page-header">Work Based Experiences</h2>
+                                            <p>
+                                                At the core of CTE is the understanding that students must see, experience and apply what they are learning in the classrooms.  With the help of 
+                                                industry partners, post secondary education partners and various organizations, students are able to witness concepts in use.  Experiences are
+                                                varied and scaffolded in order to provide every student a meaningful exposure to computer science.
+                                            </p>
+                                            <hr>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <span class="fa-stack fa-2x">
+                                                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                                          <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+                                                    </span> 
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Guest Speakers</h4>
+                                                    <p>Speakers share experiences and knowledge of careers fields and technologies used in the workforce.</p>
+                                                </div>
+                                            </div>
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <span class="fa-stack fa-2x">
+                                                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                                          <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                                    </span> 
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Career Focused Field Trip</h4>
+                                                    <p>Through field trips, students see various aspect of the career field.</p>
+                                                </div>
+                                            </div>
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <span class="fa-stack fa-2x">
+                                                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                                          <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                                    </span> 
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Job Shadowing</h4>
+                                                    <p>A more focused observation of the career field than field trips, students follow an industry professional during their day to day tasks.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <span class="fa-stack fa-2x">
+                                                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                                          <i class="fa fa-support fa-stack-1x fa-inverse"></i>
+                                                    </span> 
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Technical Workshops / Courses</h4>
+                                                    <p>Workshops and course allow students to learn topics outside of the scope of the classroom and realize how a career is a lifelong learning endeavor.</p>
+                                                </div>
+                                            </div>
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <span class="fa-stack fa-2x">
+                                                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                                          <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                                                    </span> 
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Competitions</h4>
+                                                    <p>Students are challenged to put their skills to the test by competing in hackathons.  Through competitions students build confidence in their ability to innovative.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <span class="fa-stack fa-2x">
+                                                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                                          <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
+                                                    </span> 
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Mentorship</h4>
+                                                    <p>By routine interaction with professionals, students receive valuable industry feedback, guidance and knowledge during large scaled project based learning activities.</p>
+                                                </div>
+                                            </div>
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <span class="fa-stack fa-2x">
+                                                          <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                                          <i class="fa fa-space-shuttle fa-stack-1x fa-inverse"></i>
+                                                    </span> 
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Internships</h4>
+                                                    <p>Through internships, students demonstrate skills acquired while learning emerging industry technologies and standards.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="tab-pane fade" id="lservice-career">
+                                <div class="row">
+                                        <div class="col-lg-12">
+                                            <h2 class="page-header">Career Preparation</h2>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>By combining career aligned academics with work based learning experiences students are staged for entry level positions and advanced education in high demand career fields. Through various preparatory activities student validate their skills.</p>
+                                            <ul>
+                                                <li>Take industry based certification</li>
+                                                <li>Participate in resume and interviewing experience</li>
+                                                <li>Font Awesome v4.2.0</li>
+                                                <li>Working PHP contact form with validation</li>
+                                                <li>Unstyled page elements for easy customization</li>
+                                                <li>17 HTML pages</li>
+                                            </ul>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
             </div>
-            <div class="col-md-6">
-                <p>The Modern Business template by Start Bootstrap includes:</p>
-                <ul>
-                    <li><strong>Bootstrap v3.3.7</strong>
-                    </li>
-                    <li>jQuery v1.11.1</li>
-                    <li>Font Awesome v4.2.0</li>
-                    <li>Working PHP contact form with validation</li>
-                    <li>Unstyled page elements for easy customization</li>
-                    <li>17 HTML pages</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
-            </div>
-        </div>
-        <!-- /.row -->      
-        <hr>
 
+        </div>
+        
         <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Bayside High School Computer Programming CTE 2018</p>
                 </div>
             </div>
         </footer>
@@ -410,7 +523,16 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 				$("nav" ).load( "navbar.html" );
+                var getUrlParameter = function (name) {
+                    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+                    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+                    var results = regex.exec(location.search);
+                    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+                };
+                
+                $("[href='#lservice-"+getUrlParameter("bookmark")+"']").click();
 		})
+        
 	</script>
 </body>
 

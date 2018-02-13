@@ -29,9 +29,12 @@
     <style>
         .col-md-5 h3,.breaks{margin-top:0px;color:white;background-image:url('../images/bluebk.jpg');border-radius:5px;padding:5px}
         .col-md-5 img{border-radius:5px;box-shadow:3px 3px 3px #000066;margin-bottom:10px;}
-        .breaks{text-align: center;}
+        .breaks{text-align: center; }
         .img-responsive{max-height: 400px;}
         .galleryThumbs{ height:50px;}
+        *{
+            font-size:14pt;
+        }
     </style>
 
 </head>
@@ -107,9 +110,11 @@
                 </a>
                 <p>{{data.date}}
                 </p>
+                <div id="g{{id}}">
                 {{#data.gallery}}
                     <img src="{{thumbnail}}" class="galleryThumbs">
                 {{/data.gallery}}
+                </div>
             </div>
             <div class="col-md-7">
 
@@ -117,7 +122,7 @@
                 
             </div>
         </div>
-		<hr>
+        <hr style="background-color:blue;">
 	</script>
 	<script type="text/javascript">
 		var events;
@@ -146,7 +151,11 @@
 					$("#header").after(build.join(''));
 				});
 		})
-		var display = function(id){alert(id);}
+        var gallery;
+		var display = function(id){
+            gallery = document.getElementById("g" + id);
+            
+        }
 	</script>
 
 </body>
